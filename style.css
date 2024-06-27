@@ -129,6 +129,21 @@ nav {
   height: 40px;
 }
 
+#profile-photo {
+  border-radius: 2px;
+}
+
+#sobre-mi-article {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+#sobre-mi-article p {
+  margin: 0;
+}
+
 @media (max-width: 800px) {
   body {
     padding: 0px 3rem;

@@ -1,0 +1,146 @@
+:root {
+  --background-color: #1a1a1a;
+  --main-color: rgb(255, 183, 0);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #131313;
+  padding-bottom: 40px;
+  font-size: 18px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+body {
+  color: aliceblue;
+  background-color: var(--background-color);
+  font-family: "Raleway", sans-serif;
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px 5rem;
+  border-radius: 10px;
+}
+
+h1, h3 {
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  color: #FEFEFE;
+  font-weight: 500;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+nav {
+  color: crimson;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+}
+
+.navbar-list li {
+  width: 10rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 8px 25px;
+  transition: 200ms;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+@keyframes highlight {
+  from {
+    background-position: 0;
+  }
+
+  to {
+    background-position: -100%;
+  }
+}
+
+.button:hover {
+  background-color: rgb(49, 49, 49);
+  animation-name: highlight;
+  animation-duration: 0.35s;
+  animation-fill-mode: forwards;
+  background-size: 200%;
+  background-image: linear-gradient(
+      to right,
+      var(--background-color) 50%,
+      transparent 50%
+    ),
+    linear-gradient(transparent 0%, var(--main-color) 0%);
+  color: var(--background-color);
+}
+
+.divider {
+  height: 2px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+}
+
+#contact-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+#contact-icons a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 40px;
+}
+
+@media (max-width: 800px) {
+  body {
+    padding: 0px 3rem;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .navbar-list li {
+    width: 70%;
+  }
+}

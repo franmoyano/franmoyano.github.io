@@ -3,6 +3,11 @@
   --main-color: rgb(255, 183, 0);
 }
 
+::selection {
+  color: var(--background-color);
+  background: var(--main-color);
+}
+
 html {
   scroll-behavior: smooth;
   background-color: #131313;
@@ -28,14 +33,15 @@ body {
   border-radius: 10px;
 }
 
-h1, h3 {
+h1,
+h3 {
   color: #ffffff;
   text-align: center;
   margin: 0;
 }
 
 h3 {
-  color: #FEFEFE;
+  color: #fefefe;
   font-weight: 500;
 }
 
@@ -115,6 +121,10 @@ nav {
   border-radius: 10px;
 }
 
+.contacto {
+  background-color: var(--background-color);
+}
+
 #contact-icons {
   display: flex;
   flex-direction: column;
@@ -147,6 +157,20 @@ nav {
 
 p {
   text-align: justify;
+}
+
+#contact-form {
+  width: 100%;
+}
+
+#footer-text-container {
+  display: flex;
+  justify-content: center;
+}
+
+#footer-text-container p {
+  text-align: center;
+  font-size: 14px;
 }
 
 @media (max-width: 800px) {
